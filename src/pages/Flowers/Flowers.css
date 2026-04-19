@@ -1,0 +1,13 @@
+.flowers {
+  padding-top: var(--navbar-height);
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flowers__heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: hsl(var(--foreground));
+}

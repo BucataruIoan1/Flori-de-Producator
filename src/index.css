@@ -1,0 +1,196 @@
+﻿/* =========================================
+   Design Tokens
+   ========================================= */
+:root {
+  /* Colors (HSL channels - use with hsl(var(--token))) */
+  --background: 38 35% 94%;
+  --foreground: 130 35% 15%;
+  --primary: 130 45% 22%;
+  --primary-foreground: 38 40% 96%;
+  --secondary: 38 30% 88%;
+  --accent: 350 75% 58%;
+  --muted: 38 25% 90%;
+  --muted-foreground: 130 15% 40%;
+  --border: 38 25% 82%;
+
+  /* Brand aliases */
+  --forest: 130 35% 15%;
+  --rose: 350 75% 58%;
+  --rose-dark: 350 75% 48%;
+  --cream: 38 35% 94%;
+  --cream-dark: 38 30% 88%;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-mono: ui-monospace, Consolas, monospace;
+
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, hsl(130 50% 15% / 0.85), hsl(130 45% 22% / 0.55));
+  --gradient-petal: linear-gradient(135deg, hsl(350 75% 58%), hsl(350 60% 42%));
+  --gradient-cream: linear-gradient(180deg, hsl(38 35% 96%), hsl(38 30% 88%));
+  --gradient-leaf: linear-gradient(135deg, hsl(130 45% 22%), hsl(130 50% 35%));
+
+  /* Shadows */
+  --shadow-soft: 0 2px 12px hsl(130 30% 20% / 0.08);
+  --shadow-bloom: 0 8px 30px hsl(350 75% 58% / 0.15);
+  --shadow-elegant: 0 20px 60px hsl(130 30% 10% / 0.25);
+
+  /* Layout */
+  --container-max: 1200px;
+  --navbar-height: 88px;
+  --radius: 8px;
+  --radius-sm: 4px;
+  --radius-lg: 16px;
+}
+
+/* =========================================
+   Animations
+   ========================================= */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bloom {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+
+.animate-bloom {
+  animation: bloom 0.6s ease-out both;
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.transition-bloom {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.transition-bloom:hover {
+  transform: scale(1.04);
+}
+
+.bg-gradient-hero {
+  background-image: var(--gradient-hero);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--background));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  caret-color: transparent;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  overflow-wrap: break-word;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================
+   Utility Classes
+   ========================================= */
+.glass-card {
+  background: hsl(var(--background) / 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.text-gradient {
+  background: var(--gradient-leaf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
