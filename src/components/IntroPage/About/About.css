@@ -1,13 +1,12 @@
-.home-about {
+.about {
 	padding: 8rem 0 7rem;
 	background:
 		radial-gradient(circle at top left, hsl(38 28% 91% / 0.8), transparent 38%),
 		linear-gradient(180deg, hsl(var(--background)), hsl(38 28% 92%));
 }
 
-.home-about__container {
-	width: min(100%, var(--container-max));
-	margin: 0 auto;
+.about__container {
+	width: 100%;
 	padding: 0 2rem;
 	display: grid;
 	grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
@@ -15,42 +14,49 @@
 	align-items: center;
 }
 
-.home-about__content {
+@media (min-width: 768px) {
+	.about__container {
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+}
+
+.about__content {
 	max-width: 42rem;
 }
 
-.home-about__eyebrow {
+.about__eyebrow {
 	display: inline-block;
 	font-family: var(--font-script);
-	font-size: clamp(2.5rem, 4vw, 3.25rem);
+	font-size: 36px;
 	line-height: 1;
 	color: hsl(var(--accent));
 }
 
-.home-about__title {
+.about__title {
 	margin-top: 1.25rem;
 	color: hsl(var(--primary));
 	font-family: var(--font-heading);
-	font-size: clamp(3.5rem, 5.8vw, 4.75rem);
+	font-size: 48px;
 	font-weight: 600;
 	line-height: 0.96;
 	letter-spacing: -0.03em;
 }
 
-.home-about__description {
-	margin-top: 2.25rem;
+.about__description {
+	margin-top: 2rem;
 	max-width: 40rem;
-	font-size: clamp(1.35rem, 2vw, 1.55rem);
+	font-size: 18px;
 	line-height: 1.7;
 	color: hsl(var(--muted-foreground));
 }
 
-.home-about__description strong {
+.about__description strong {
 	color: hsl(var(--primary));
 	font-weight: 700;
 }
 
-.home-about__features {
+.about__features {
 	margin-top: 3.5rem;
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -58,14 +64,14 @@
 	max-width: 42rem;
 }
 
-.home-about__feature {
+.about__feature {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 }
 
-.home-about__featureIconWrap {
+.about__featureIconWrap {
 	width: 4.5rem;
 	height: 4.5rem;
 	display: grid;
@@ -74,11 +80,11 @@
 	background-color: hsl(var(--secondary));
 }
 
-.home-about__featureIcon {
+.about__featureIcon {
 	color: hsl(var(--primary));
 }
 
-.home-about__featureLabel {
+.about__featureLabel {
 	margin-top: 1rem;
 	font-family: var(--font-sans);
 	font-size: 1.125rem;
@@ -87,94 +93,94 @@
 	color: hsl(var(--muted-foreground));
 }
 
-.home-about__gallery {
+.about__gallery {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 1.2rem;
 	align-items: start;
 }
 
-.home-about__imageCard {
+.about__imageCard {
 	overflow: hidden;
 	border-radius: 1.7rem;
 	box-shadow: 0 18px 40px hsl(130 20% 18% / 0.12);
 	background-color: hsl(var(--background));
 }
 
-.home-about__imageCard--first {
+.about__imageCard--first {
 	margin-top: -2rem;
 }
 
-.home-about__imageCard--second {
+.about__imageCard--second {
 	margin-top: 2rem;
 }
 
-.home-about__image {
+.about__image {
 	width: 100%;
 	height: 24rem;
 	object-fit: cover;
 }
 
 @media (max-width: 1023px) {
-	.home-about {
+	.about {
 		padding: 6rem 0;
 	}
 
-	.home-about__container {
+	.about__container {
 		grid-template-columns: 1fr;
 	}
 
-	.home-about__content {
+	.about__content {
 		max-width: none;
 	}
 
-	.home-about__gallery {
+	.about__gallery {
 		max-width: 48rem;
 	}
 }
 
 @media (max-width: 767px) {
-	.home-about {
+	.about {
 		padding: 5rem 0;
 	}
 
-	.home-about__container {
+	.about__container {
 		padding: 0 1.25rem;
 		gap: 2.5rem;
 	}
 
-	.home-about__title {
+	.about__title {
 		font-size: clamp(2.8rem, 12vw, 4rem);
 	}
 
-	.home-about__description {
+	.about__description {
 		font-size: 1.1rem;
 		line-height: 1.65;
 	}
 
-	.home-about__features {
+	.about__features {
 		gap: 1rem;
 	}
 
-	.home-about__featureIconWrap {
+	.about__featureIconWrap {
 		width: 4rem;
 		height: 4rem;
 	}
 
-	.home-about__featureLabel {
+	.about__featureLabel {
 		font-size: 0.875rem;
 	}
 
-	.home-about__gallery {
+	.about__gallery {
 		gap: 1rem;
 	}
 
-	.home-about__imageCard--first,
-	.home-about__imageCard--second {
+	.about__imageCard--first,
+	.about__imageCard--second {
 		margin-top: 0;
 	}
 
-	.home-about__image {
+	.about__image {
 		height: 16rem;
 	}
 }

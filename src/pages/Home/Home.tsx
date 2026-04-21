@@ -1,7 +1,6 @@
 import Navbar from '@/components/Navbar/Navbar'
 import IntroPage from '@/components/IntroPage/IntroPage'
-
-import './Home.css'
+import About from '@/components/IntroPage/About/About'
 
 export default function Home() {
   return (
@@ -9,6 +8,7 @@ export default function Home() {
       <Navbar />
       <main>
         <IntroPage />
+        <About />
       </main>
     </>
   )
