@@ -1,0 +1,22 @@
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(38 30% 92%);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.5rem;
+}
+
+.price-row__label {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: hsl(var(--foreground) / 0.85);
+}
+
+.price-row__amount {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(var(--forest));
+  font-variant-numeric: oldstyle-nums;
+}

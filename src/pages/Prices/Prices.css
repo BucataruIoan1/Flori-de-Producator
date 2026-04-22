@@ -1,13 +1,40 @@
-.prices {
-  padding-top: var(--navbar-height);
-  min-height: 100svh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.prices-body {
+  background: hsl(38 30% 92%);
+  padding: 5rem 2rem 6rem;
 }
 
-.prices__heading {
-  font-family: var(--font-serif);
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  color: hsl(var(--foreground));
+@media (min-width: 768px) {
+  .prices-body {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+.prices-body__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.prices-body__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 767px) {
+  .prices-body__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.prices-body__note {
+  font-family: var(--font-sans);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: hsl(var(--muted-foreground));
+  text-align: center;
+  padding: 1rem 0;
 }
