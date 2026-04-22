@@ -1,0 +1,108 @@
+.contact-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+}
+
+.contact-box--light {
+  background: hsl(0 0% 100%);
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-box--dark {
+  background: hsl(var(--primary));
+}
+
+.contact-box__icon-wrap {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-box__icon-wrap--rose {
+  background: hsl(var(--rose) / 0.12);
+  color: hsl(var(--rose));
+}
+
+.contact-box__icon-wrap--light {
+  background: hsl(var(--primary-foreground) / 0.18);
+  color: hsl(var(--primary-foreground));
+}
+
+.contact-box__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.contact-box__label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: hsl(var(--rose));
+}
+
+.contact-box__label--light {
+  color: hsl(var(--primary-foreground) / 0.75);
+}
+
+.contact-box__title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: hsl(var(--foreground));
+  line-height: 1.2;
+  margin-top: 0.1rem;
+}
+
+.contact-box__title--light {
+  color: hsl(var(--primary-foreground));
+}
+
+.contact-box__line {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: hsl(var(--foreground) / 0.75);
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.contact-box__line--link {
+  color: hsl(var(--foreground) / 0.75);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-box__line--link:hover {
+  color: hsl(var(--rose));
+}
+
+.contact-box__line--light {
+  color: hsl(var(--primary-foreground) / 0.85);
+}
+
+.contact-box__maps-btn {
+  display: inline-block;
+  margin-top: 0.65rem;
+  padding: 0.55rem 1.25rem;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.contact-box__maps-btn:hover {
+  background: hsl(var(--forest));
+}
