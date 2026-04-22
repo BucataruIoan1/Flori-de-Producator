@@ -1,13 +1,34 @@
-.flowers {
-  padding-top: var(--navbar-height);
-  min-height: 100svh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.flowers-grid-section {
+  background: hsl(38 30% 92%);
+  padding: 5rem 2rem 6rem;
 }
 
-.flowers__heading {
-  font-family: var(--font-serif);
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  color: hsl(var(--foreground));
+@media (min-width: 768px) {
+  .flowers-grid-section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+.flowers-grid-section__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.flowers-grid-section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .flowers-grid-section__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .flowers-grid-section__grid {
+    grid-template-columns: 1fr;
+  }
 }
