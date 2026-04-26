@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 
-import Flower from './Flower/Flower'
+import Flower from '@/components/Flower/Flower'
 
 import blancheRoche from '@/assets/images/flowers/blanche-roche.jpg'
 import decoraDarkPink from '@/assets/images/flowers/decora-dark-pink.jpg'

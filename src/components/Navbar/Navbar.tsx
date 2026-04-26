@@ -2,7 +2,7 @@
 import { NavLink, Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
-import logo from '@/assets/images/logo.jpeg'
+import logo from '@/assets/images/solar/logo.jpeg'
 
 import './Navbar.css'
 

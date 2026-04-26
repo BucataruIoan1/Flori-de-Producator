@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Phone, MapPin } from 'lucide-react'
 
-import logo from '@/assets/images/logo.jpeg'
+import logo from '@/assets/images/solar/logo.jpeg'
 
 import './Footer.css'
 

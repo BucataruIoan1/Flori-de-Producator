@@ -1,6 +1,6 @@
 ﻿import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
-import homeImage from '../../assets/images/home.jpg'
+import homeImage from '../../assets/images/solar/home.jpg'
 import './IntroPage.css'
 
 export default function IntroPage() {

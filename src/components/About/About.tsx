@@ -1,7 +1,7 @@
 import { Heart, Leaf, Sprout } from 'lucide-react'
 
-import greenhouse1 from '@/assets/images/greenhouse-1.jpg'
-import greenhouse2 from '@/assets/images/greenhouse-2.jpg'
+import greenhouse1 from '@/assets/images/solar/greenhouse-1.jpg'
+import greenhouse2 from '@/assets/images/solar/greenhouse-2.jpg'
 
 import './About.css'
 

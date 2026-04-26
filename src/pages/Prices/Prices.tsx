@@ -19,9 +19,6 @@ export default function Prices() {
               <PriceBox variant="ghivece" />
             </div>
             <OtherPriceBox />
-            <p className="prices-body__note">
-              Pentru comenzi personalizate sau cantități mai mari, te rugăm să ne contactezi telefonic.
-            </p>
           </div>
         </section>
       </main>
