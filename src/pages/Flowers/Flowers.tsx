@@ -14,7 +14,7 @@ import emilia from '@/assets/images/flowers/emilia.jpeg'
 import victor from '@/assets/images/flowers/victor.jpeg'
 import greta from '@/assets/images/flowers/greta.jpeg'
 import ellen from '@/assets/images/flowers/ellen.jpeg'
-import stefanie from '@/assets/images/flowers/stefanie.jpg'
+import stefanie from '@/assets/images/flowers/stefanie.jpeg'
 
 import './Flowers.css'
 
