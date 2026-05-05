@@ -2,7 +2,7 @@ import './Price.css'
 
 interface PriceProps {
   label: string
-  amount: number
+  amount: number | string
 }
 
 export default function Price({ label, amount }: PriceProps) {

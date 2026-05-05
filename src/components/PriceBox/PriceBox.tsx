@@ -14,9 +14,9 @@ const rasadItems = [
 ]
 
 const ghiveceItems = [
-  { label: '30 cm + 2 ghivece', amount: 65 },
-  { label: '50 cm + 3 ghivece', amount: 100 },
-  { label: '70 cm + 4 ghivece', amount: 130 },
+  { label: '30 cm + 1/2 ghivece', amount: '40 / 65' },
+  { label: '50 cm + 2/3 ghivece', amount: '70 / 100' },
+  { label: '70 cm + 3/4 ghivece', amount: '100 / 130' },
 ]
 
 export default function PriceBox({ variant }: PriceBoxProps) {

@@ -3,9 +3,9 @@ import { ArrowRight } from 'lucide-react'
 
 import Flower from '@/components/Flower/Flower'
 
-import blancheRoche from '@/assets/images/flowers/blanche-roche.jpg'
-import decoraDarkPink from '@/assets/images/flowers/decora-dark-pink.jpg'
-import dresdenImproved from '@/assets/images/flowers/dresden-improved.jpg'
+import blancheRoche from '@/assets/images/flowers/blanche-roche.jpeg'
+import decoraDarkPink from '@/assets/images/flowers/decora-dark-pink.jpeg'
+import dresdenImproved from '@/assets/images/flowers/dresden-improve.jpeg'
 
 import './PresentationFlowers.css'
 
