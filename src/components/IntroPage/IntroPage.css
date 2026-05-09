@@ -156,4 +156,20 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .intropage__brand {
+    font-size: 32px;
+  }
+
+  .intropage__heading {
+    font-size: 56px;
+  }
+
+  .intropage__heading em {
+    font-size: 56px;
+  }
+
+  .intropage__description {
+    font-size: 16px;
+  }
 }

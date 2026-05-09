@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Phone, MapPin } from 'lucide-react'
 
 import logo from '@/assets/images/solar/logo.jpeg'
@@ -6,6 +6,14 @@ import logo from '@/assets/images/solar/logo.jpeg'
 import './Footer.css'
 
 export default function Footer() {
+  const { pathname } = useLocation()
+
+  const navLinks = [
+    { to: '/', label: 'Acasă' },
+    { to: '/florile-noastre', label: 'Florile noastre' },
+    { to: '/preturi', label: 'Prețuri' },
+    { to: '/contact', label: 'Contact' },
+  ].filter(link => link.to !== pathname)
   return (
     <footer className="footer">
       <div className="footer__main">
@@ -42,10 +50,9 @@ export default function Footer() {
         <div className="footer__col">
           <h4 className="footer__colTitle">Navigare</h4>
           <ul className="footer__navList">
-            <li><Link to="/" className="footer__navLink">Acasă</Link></li>
-            <li><Link to="/florile-noastre" className="footer__navLink">Florile noastre</Link></li>
-            <li><Link to="/preturi" className="footer__navLink">Prețuri</Link></li>
-            <li><Link to="/contact" className="footer__navLink">Contact</Link></li>
+            {navLinks.map(link => (
+              <li key={link.to}><Link to={link.to} className="footer__navLink">{link.label}</Link></li>
+            ))}
           </ul>
         </div>
       </div>
